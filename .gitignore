@@ -1,0 +1,5 @@
+DerivedData/
+.derivedData/
+xcuserdata/
+*.xcscmblueprint
+.DS_Store

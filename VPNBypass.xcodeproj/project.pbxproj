@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B001 /* VPNBypassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001 /* VPNBypassApp.swift */; };
+		B002 /* DomainRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* DomainRecord.swift */; };
+		B003 /* RouteApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* RouteApplicationState.swift */; };
+		B004 /* AppPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* AppPersistence.swift */; };
+		B005 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* LogEntry.swift */; };
+		B006 /* DomainValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* DomainValidation.swift */; };
+		B007 /* DomainRowDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* DomainRowDisplay.swift */; };
+		B008 /* DomainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* DomainStore.swift */; };
+		B009 /* ResolverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* ResolverService.swift */; };
+		B010 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* ScriptRunner.swift */; };
+		B011 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011 /* RouteManager.swift */; };
+		B012 /* VPNMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012 /* VPNMonitor.swift */; };
+		B013 /* LoginItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013 /* LoginItemManager.swift */; };
+		B014 /* DomainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F014 /* DomainListViewModel.swift */; };
+		B015 /* DomainRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015 /* DomainRowView.swift */; };
+		B016 /* LogsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016 /* LogsPanelView.swift */; };
+		B017 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017 /* MainView.swift */; };
+		B018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F018 /* Assets.xcassets */; };
+		B019 /* bypass_routes.sh in Resources */ = {isa = PBXBuildFile; fileRef = F019 /* bypass_routes.sh */; };
+		B020 /* default_domains.json in Resources */ = {isa = PBXBuildFile; fileRef = F020 /* default_domains.json */; };
+		B301 /* RouteScriptProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200 /* RouteScriptProcessRunner.swift */; };
+		B302 /* RouteXPCPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201 /* RouteXPCPayload.swift */; };
+		B303 /* RouteXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202 /* RouteXPCProtocol.swift */; };
+		B304 /* PrivilegedRouteExecuting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203 /* PrivilegedRouteExecuting.swift */; };
+		B305 /* AppPrivilegedRoutingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204 /* AppPrivilegedRoutingConfiguration.swift */; };
+		B306 /* RoutePrivilegedExecutorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205 /* RoutePrivilegedExecutorFactory.swift */; };
+		B307 /* PrivilegedHelperClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206 /* PrivilegedHelperClient.swift */; };
+		B308 /* PrivilegedHelperServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207 /* PrivilegedHelperServiceManager.swift */; };
+		B320 /* RouteScriptProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200 /* RouteScriptProcessRunner.swift */; };
+		B321 /* RouteXPCPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201 /* RouteXPCPayload.swift */; };
+		B322 /* RouteXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202 /* RouteXPCProtocol.swift */; };
+		B323 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220 /* main.swift */; };
+		B324 /* RouteHelperXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221 /* RouteHelperXPCService.swift */; };
+		B325 /* RouteHelperCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222 /* RouteHelperCommandHandler.swift */; };
+		B326 /* bypass_routes.sh in Resources */ = {isa = PBXBuildFile; fileRef = F019 /* bypass_routes.sh */; };
+		BA9E9DC42F813B3300ADFC9E /* ManagedDomainsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9E9DC32F813B2600ADFC9E /* ManagedDomainsSection.swift */; };
+		BAA25E642F7DD1E500EDDC19 /* ManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA25E632F7DD1DB00EDDC19 /* ManagerView.swift */; };
+		BAA25E662F7DED4F00EDDC19 /* ManagerSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA25E652F7DED2A00EDDC19 /* ManagerSetting.swift */; };
+		BAA260012F7DD2A000EDDC19 /* ManagerDesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA260002F7DD2A000EDDC19 /* ManagerDesignTokens.swift */; };
+		BAA260032F7DD2A000EDDC19 /* ManagerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA260022F7DD2A000EDDC19 /* ManagerHeaderView.swift */; };
+		BAA260072F7DD2A000EDDC19 /* BypassStatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA260062F7DD2A000EDDC19 /* BypassStatusBanner.swift */; };
+		BAA260092F7DD2A000EDDC19 /* AddDomainInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA260082F7DD2A000EDDC19 /* AddDomainInputRow.swift */; };
+		BAA2600B2F7DD2A000EDDC19 /* ManagedDomainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA2600A2F7DD2A000EDDC19 /* ManagedDomainCardView.swift */; };
+		BAA2600D2F7DD2A000EDDC19 /* ManagerActionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA2600C2F7DD2A000EDDC19 /* ManagerActionFooter.swift */; };
+		BAA2600F2F7DD2A000EDDC19 /* ManagerActivityLogSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA2600E2F7DD2A000EDDC19 /* ManagerActivityLogSection.swift */; };
+		BCPY1 /* bypass_routes.sh in Copy Routes Script */ = {isa = PBXBuildFile; fileRef = F019 /* bypass_routes.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BCPY2 /* VPNBypassRouteHelper in Embed Privileged Helper */ = {isa = PBXBuildFile; fileRef = HPRD /* VPNBypassRouteHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BCPY3 /* bypass_routes.sh in Embed Privileged Helper */ = {isa = PBXBuildFile; fileRef = F019 /* bypass_routes.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		PXY1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PRJ1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = TGT2;
+			remoteInfo = VPNBypassRouteHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CPAPP /* Embed Privileged Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				BCPY2 /* VPNBypassRouteHelper in Embed Privileged Helper */,
+				BCPY3 /* bypass_routes.sh in Embed Privileged Helper */,
+			);
+			name = "Embed Privileged Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CPHELP /* Copy Routes Script */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				BCPY1 /* bypass_routes.sh in Copy Routes Script */,
+			);
+			name = "Copy Routes Script";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA9E9DC32F813B2600ADFC9E /* ManagedDomainsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedDomainsSection.swift; sourceTree = "<group>"; };
+		BAA25E632F7DD1DB00EDDC19 /* ManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerView.swift; sourceTree = "<group>"; };
+		BAA25E652F7DED2A00EDDC19 /* ManagerSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerSetting.swift; sourceTree = "<group>"; };
+		BAA260002F7DD2A000EDDC19 /* ManagerDesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerDesignTokens.swift; sourceTree = "<group>"; };
+		BAA260022F7DD2A000EDDC19 /* ManagerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerHeaderView.swift; sourceTree = "<group>"; };
+		BAA260062F7DD2A000EDDC19 /* BypassStatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BypassStatusBanner.swift; sourceTree = "<group>"; };
+		BAA260082F7DD2A000EDDC19 /* AddDomainInputRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainInputRow.swift; sourceTree = "<group>"; };
+		BAA2600A2F7DD2A000EDDC19 /* ManagedDomainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedDomainCardView.swift; sourceTree = "<group>"; };
+		BAA2600C2F7DD2A000EDDC19 /* ManagerActionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerActionFooter.swift; sourceTree = "<group>"; };
+		BAA2600E2F7DD2A000EDDC19 /* ManagerActivityLogSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerActivityLogSection.swift; sourceTree = "<group>"; };
+		F001 /* VPNBypassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNBypassApp.swift; sourceTree = "<group>"; };
+		F002 /* DomainRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRecord.swift; sourceTree = "<group>"; };
+		F003 /* RouteApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteApplicationState.swift; sourceTree = "<group>"; };
+		F004 /* AppPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPersistence.swift; sourceTree = "<group>"; };
+		F005 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		F006 /* DomainValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainValidation.swift; sourceTree = "<group>"; };
+		F007 /* DomainRowDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRowDisplay.swift; sourceTree = "<group>"; };
+		F008 /* DomainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainStore.swift; sourceTree = "<group>"; };
+		F009 /* ResolverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverService.swift; sourceTree = "<group>"; };
+		F010 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
+		F011 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		F012 /* VPNMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNMonitor.swift; sourceTree = "<group>"; };
+		F013 /* LoginItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManager.swift; sourceTree = "<group>"; };
+		F014 /* DomainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainListViewModel.swift; sourceTree = "<group>"; };
+		F015 /* DomainRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRowView.swift; sourceTree = "<group>"; };
+		F016 /* LogsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsPanelView.swift; sourceTree = "<group>"; };
+		F017 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F019 /* bypass_routes.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bypass_routes.sh; sourceTree = "<group>"; };
+		F020 /* default_domains.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_domains.json; sourceTree = "<group>"; };
+		F021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F022 /* VPNBypass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPNBypass.entitlements; sourceTree = "<group>"; };
+		F200 /* RouteScriptProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScriptProcessRunner.swift; sourceTree = "<group>"; };
+		F201 /* RouteXPCPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteXPCPayload.swift; sourceTree = "<group>"; };
+		F202 /* RouteXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteXPCProtocol.swift; sourceTree = "<group>"; };
+		F203 /* PrivilegedRouteExecuting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivilegedRouteExecuting.swift; sourceTree = "<group>"; };
+		F204 /* AppPrivilegedRoutingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrivilegedRoutingConfiguration.swift; sourceTree = "<group>"; };
+		F205 /* RoutePrivilegedExecutorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePrivilegedExecutorFactory.swift; sourceTree = "<group>"; };
+		F206 /* PrivilegedHelperClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivilegedHelperClient.swift; sourceTree = "<group>"; };
+		F207 /* PrivilegedHelperServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivilegedHelperServiceManager.swift; sourceTree = "<group>"; };
+		F220 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F221 /* RouteHelperXPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHelperXPCService.swift; sourceTree = "<group>"; };
+		F222 /* RouteHelperCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHelperCommandHandler.swift; sourceTree = "<group>"; };
+		F223 /* com.vpnbypass.VPNBypass.route-helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "com.vpnbypass.VPNBypass.route-helper.plist"; sourceTree = "<group>"; };
+		HPRD /* VPNBypassRouteHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VPNBypassRouteHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		PROD /* VPNBypass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNBypass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FW01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FW02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G000 = {
+			isa = PBXGroup;
+			children = (
+				G100 /* VPNBypass */,
+				G125 /* VPNBypassRouteHelper */,
+				G900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G100 /* VPNBypass */ = {
+			isa = PBXGroup;
+			children = (
+				F001 /* VPNBypassApp.swift */,
+				F021 /* Info.plist */,
+				F022 /* VPNBypass.entitlements */,
+				F018 /* Assets.xcassets */,
+				G122 /* PrivilegedRoutingShared */,
+				G110 /* Models */,
+				G120 /* Services */,
+				G130 /* ViewModels */,
+				G140 /* Views */,
+				G150 /* Resources */,
+			);
+			path = VPNBypass;
+			sourceTree = "<group>";
+		};
+		G110 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F002 /* DomainRecord.swift */,
+				F003 /* RouteApplicationState.swift */,
+				F004 /* AppPersistence.swift */,
+				F005 /* LogEntry.swift */,
+				F006 /* DomainValidation.swift */,
+				F007 /* DomainRowDisplay.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G120 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F008 /* DomainStore.swift */,
+				F009 /* ResolverService.swift */,
+				G123 /* PrivilegedRouting */,
+				F010 /* ScriptRunner.swift */,
+				F011 /* RouteManager.swift */,
+				F012 /* VPNMonitor.swift */,
+				F013 /* LoginItemManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G122 /* PrivilegedRoutingShared */ = {
+			isa = PBXGroup;
+			children = (
+				F200 /* RouteScriptProcessRunner.swift */,
+				F201 /* RouteXPCPayload.swift */,
+				F202 /* RouteXPCProtocol.swift */,
+			);
+			path = PrivilegedRoutingShared;
+			sourceTree = "<group>";
+		};
+		G123 /* PrivilegedRouting */ = {
+			isa = PBXGroup;
+			children = (
+				F203 /* PrivilegedRouteExecuting.swift */,
+				F204 /* AppPrivilegedRoutingConfiguration.swift */,
+				F205 /* RoutePrivilegedExecutorFactory.swift */,
+				F206 /* PrivilegedHelperClient.swift */,
+				F207 /* PrivilegedHelperServiceManager.swift */,
+			);
+			path = PrivilegedRouting;
+			sourceTree = "<group>";
+		};
+		G125 /* VPNBypassRouteHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F220 /* main.swift */,
+				F221 /* RouteHelperXPCService.swift */,
+				F222 /* RouteHelperCommandHandler.swift */,
+				F223 /* com.vpnbypass.VPNBypass.route-helper.plist */,
+			);
+			path = VPNBypassRouteHelper;
+			sourceTree = "<group>";
+		};
+		G130 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F014 /* DomainListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G140 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				G141 /* Manager */,
+				BAA25E632F7DD1DB00EDDC19 /* ManagerView.swift */,
+				F015 /* DomainRowView.swift */,
+				F016 /* LogsPanelView.swift */,
+				F017 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G141 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BA9E9DC32F813B2600ADFC9E /* ManagedDomainsSection.swift */,
+				BAA260082F7DD2A000EDDC19 /* AddDomainInputRow.swift */,
+				BAA260062F7DD2A000EDDC19 /* BypassStatusBanner.swift */,
+				BAA2600A2F7DD2A000EDDC19 /* ManagedDomainCardView.swift */,
+				BAA2600C2F7DD2A000EDDC19 /* ManagerActionFooter.swift */,
+				BAA2600E2F7DD2A000EDDC19 /* ManagerActivityLogSection.swift */,
+				BAA260002F7DD2A000EDDC19 /* ManagerDesignTokens.swift */,
+				BAA260022F7DD2A000EDDC19 /* ManagerHeaderView.swift */,
+				BAA25E652F7DED2A00EDDC19 /* ManagerSetting.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		G150 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F019 /* bypass_routes.sh */,
+				F020 /* default_domains.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PROD /* VPNBypass.app */,
+				HPRD /* VPNBypassRouteHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TGT1 /* VPNBypass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL2 /* Build configuration list for PBXNativeTarget "VPNBypass" */;
+			buildPhases = (
+				SRC1 /* Sources */,
+				FW01 /* Frameworks */,
+				RES1 /* Resources */,
+				CPAPP /* Embed Privileged Helper */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E601 /* PBXTargetDependency */,
+			);
+			name = VPNBypass;
+			productName = VPNBypass;
+			productReference = PROD /* VPNBypass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TGT2 /* VPNBypassRouteHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL4 /* Build configuration list for PBXNativeTarget "VPNBypassRouteHelper" */;
+			buildPhases = (
+				SRC2 /* Sources */,
+				FW02 /* Frameworks */,
+				RES2 /* Resources */,
+				CPHELP /* Copy Routes Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPNBypassRouteHelper;
+			productName = VPNBypassRouteHelper;
+			productReference = HPRD /* VPNBypassRouteHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PRJ1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TGT1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TGT2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BCL1 /* Build configuration list for PBXProject "VPNBypass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G000;
+			productRefGroup = G900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TGT1 /* VPNBypass */,
+				TGT2 /* VPNBypassRouteHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RES1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B018 /* Assets.xcassets in Resources */,
+				B019 /* bypass_routes.sh in Resources */,
+				B020 /* default_domains.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		RES2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B326 /* bypass_routes.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001 /* VPNBypassApp.swift in Sources */,
+				B002 /* DomainRecord.swift in Sources */,
+				B003 /* RouteApplicationState.swift in Sources */,
+				B004 /* AppPersistence.swift in Sources */,
+				B005 /* LogEntry.swift in Sources */,
+				B006 /* DomainValidation.swift in Sources */,
+				BAA25E642F7DD1E500EDDC19 /* ManagerView.swift in Sources */,
+				BAA260012F7DD2A000EDDC19 /* ManagerDesignTokens.swift in Sources */,
+				BAA260032F7DD2A000EDDC19 /* ManagerHeaderView.swift in Sources */,
+				BAA260072F7DD2A000EDDC19 /* BypassStatusBanner.swift in Sources */,
+				BAA260092F7DD2A000EDDC19 /* AddDomainInputRow.swift in Sources */,
+				BAA2600B2F7DD2A000EDDC19 /* ManagedDomainCardView.swift in Sources */,
+				BAA2600D2F7DD2A000EDDC19 /* ManagerActionFooter.swift in Sources */,
+				BAA2600F2F7DD2A000EDDC19 /* ManagerActivityLogSection.swift in Sources */,
+				B007 /* DomainRowDisplay.swift in Sources */,
+				B008 /* DomainStore.swift in Sources */,
+				B009 /* ResolverService.swift in Sources */,
+				B301 /* RouteScriptProcessRunner.swift in Sources */,
+				B302 /* RouteXPCPayload.swift in Sources */,
+				B303 /* RouteXPCProtocol.swift in Sources */,
+				B304 /* PrivilegedRouteExecuting.swift in Sources */,
+				B305 /* AppPrivilegedRoutingConfiguration.swift in Sources */,
+				B306 /* RoutePrivilegedExecutorFactory.swift in Sources */,
+				B307 /* PrivilegedHelperClient.swift in Sources */,
+				BA9E9DC42F813B3300ADFC9E /* ManagedDomainsSection.swift in Sources */,
+				B308 /* PrivilegedHelperServiceManager.swift in Sources */,
+				B010 /* ScriptRunner.swift in Sources */,
+				BAA25E662F7DED4F00EDDC19 /* ManagerSetting.swift in Sources */,
+				B011 /* RouteManager.swift in Sources */,
+				B012 /* VPNMonitor.swift in Sources */,
+				B013 /* LoginItemManager.swift in Sources */,
+				B014 /* DomainListViewModel.swift in Sources */,
+				B015 /* DomainRowView.swift in Sources */,
+				B016 /* LogsPanelView.swift in Sources */,
+				B017 /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SRC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B320 /* RouteScriptProcessRunner.swift in Sources */,
+				B321 /* RouteXPCPayload.swift in Sources */,
+				B322 /* RouteXPCProtocol.swift in Sources */,
+				B323 /* main.swift in Sources */,
+				B324 /* RouteHelperXPCService.swift in Sources */,
+				B325 /* RouteHelperCommandHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = TGT2 /* VPNBypassRouteHelper */;
+			targetProxy = PXY1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VPNBypass/VPNBypass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNBypass/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbypass.VPNBypass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VPNBypass/VPNBypass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNBypass/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbypass.VPNBypass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleName = VPNBypassRouteHelper;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpnbypass.VPNBypass.route-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleName = VPNBypassRouteHelper;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpnbypass.VPNBypass.route-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCL1 /* Build configuration list for PBXProject "VPNBypass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01 /* Debug */,
+				BC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL2 /* Build configuration list for PBXNativeTarget "VPNBypass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03 /* Debug */,
+				BC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL4 /* Build configuration list for PBXNativeTarget "VPNBypassRouteHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC07 /* Debug */,
+				BC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PRJ1 /* Project object */;
+}
