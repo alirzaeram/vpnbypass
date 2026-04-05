@@ -2,6 +2,8 @@
 
 A native **macOS** utility built with **Swift** and **SwiftUI** for advanced users who want traffic to **specific hostnames** to follow the system’s **current IPv4 default gateway** instead of a VPN’s default route—when that routing table layout makes sense for your network. The app resolves domains, then adds or removes **per-host IPv4 routes** via a bundled **`bypass_routes.sh`** script (wrapped for privilege elevation).
 
+![VPN Bypass UI](screenshot-1.jpg)
+
 ## Requirements
 
 - macOS **13.0** (Ventura) or newer  
